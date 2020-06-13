@@ -18,7 +18,7 @@ class Application
        if req.path.match(/add/)
          search_term = req.params["q"]
          @@items.each do |item|
-        resp.write "#{cart}\n"
+         resp.write "#{cart}\n"
       end
     elsif req.path.match(/search/)
       search_term = req.params["q"]
