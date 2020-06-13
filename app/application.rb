@@ -10,9 +10,9 @@ class Application
       @@items.each do |item|
         resp.write "#{item}\n"
       end
-      if req.path.match(/card/)
+      if req.path.match(/cart/)
       @@items.each do |item|
-        resp.write "#{item}\n"
+        resp.write "#{cart}\n"
       end
     elsif req.path.match(/search/)
       search_term = req.params["q"]
