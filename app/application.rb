@@ -16,7 +16,7 @@ class Application
       end
       
        if req.path.match(/add/)
-         search_term = req.params["q"]
+         search_term = req.params["item"]
          @@items.each do |item|
          resp.write "#{cart}\n"
       end
