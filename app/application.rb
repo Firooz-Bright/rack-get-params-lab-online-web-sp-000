@@ -9,9 +9,9 @@ class Application
     if req.path.match(/items/)
       @@items.each do |item|
         resp.write "#{item}\n"
-      end
       
-      if req.path.match(/cart/)
+      
+     elsif req.path.match(/cart/)
       @@items.each do |item|
         resp.write "#{cart}\n"
       
